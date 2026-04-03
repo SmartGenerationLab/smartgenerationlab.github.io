@@ -330,7 +330,7 @@ scholar:
   source: /files/     # .bib 파일이 저장될 폴더 위치
   bibliography: papers.bib
   group_by: year             # 연도별로 묶어서 보여줌
-  order_by: year             # 최신순 정렬
+  group_order: descending    # 최신순 정렬
 
 # Archives
 #  Type
