@@ -329,6 +329,7 @@ scholar:
   style: ieee                 # 인용 스타일 (apa, ieee, mla 등)
   locale: en                  # 언어 설정
   source: /files/     # .bib 파일이 저장될 폴더 위치
+  bibliography: papers.bib
   bibliography_template: bib  # 논문 목록을 출력할 템플릿 (기본값)
   replace_strings: true       # BibTeX 문자열 치환 사용 여부
 
