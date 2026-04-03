@@ -10,7 +10,7 @@ redirect_from:
 
 ## 스마트 제너레이션 랩(Smart Generation Lab)에 오신 것을 환영합니다!
 
-**스마트 제너레이션 랩(Smart Generation Lab)**은 동서대학교 컴퓨터공학부 소속 연구실로, 생성형 AI(Generative AI)와 컴퓨터 비전(Computer Vision) 기술을 통해 세상을 변화시키는 차세대 지능형 시스템을 연구합니다. 
+**스마트 제너레이션 랩(Smart Generation Lab)**은 동서대학교 컴퓨터공학부(소프트웨어전공) 소속 연구실로, 생성형 AI(Generative AI)와 컴퓨터 비전(Computer Vision) 기술을 통해 세상을 변화시키는 차세대 지능형 시스템을 연구합니다. 
 
 우리는 오픈소스 모델의 효율적인 활용과 로컬 환경에서의 LLM 최적화, 그리고 실세계 문제를 해결하기 위한 가상 융합 기술에 집중하고 있습니다.
 
