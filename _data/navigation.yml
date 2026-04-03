@@ -10,18 +10,18 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Research"
-    url: /research/
+  # - title: "Research"
+  #   url: /research/
   - title: "Publications"
     url: /publications/
-  - title: "Members"
-    url: /members/
-  - title: "Projects"
-    url: /projects/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "News"
-    url: /news/
+  # - title: "Members"
+  #   url: /members/
+  # - title: "Projects"
+  #   url: /projects/
+  # - title: "Teaching"
+  #   url: /teaching/
+  # - title: "News"
+  #   url: /news/
 
 # main:
 #   - title: "Publications"
