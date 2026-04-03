@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # github-pages 젬을 절대 포함하지 마세요! (Jekyll 3와 충돌 방지)
 gem "jekyll", "~> 4.3.0"
 gem "jekyll-scholar", ">= 7.1.0"
+gem "jemoji"
 
 # Academic Pages(Minimal Mistakes) 테마와 호환되는 플러그인들
 group :jekyll_plugins do
