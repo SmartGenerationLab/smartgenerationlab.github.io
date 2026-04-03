@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 group :jekyll_plugins do
-  gem 'jekyll'
+  gem 'jekyll', '~> 3.9'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from'
@@ -9,7 +9,7 @@ group :jekyll_plugins do
   gem 'webrick', '~> 1.8'
 end
 
-gem "jekyll-scholar"
+gem 'jekyll-scholar', '>= 7.1.0'
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
