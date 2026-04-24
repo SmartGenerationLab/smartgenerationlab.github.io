@@ -20,6 +20,7 @@ redirect_from:
 
 We specialize in the efficient utilization of open-source models, optimization of Large Language Models (LLMs) in local environments, and virtual convergence technologies designed to solve real-world problems.
 
+<img src='/images/1.png'>
 ---
 
 ### 🔍 주요 연구 분야 (Research Interests)
@@ -40,6 +41,7 @@ Our lab conducts in-depth exploration into the following core areas:
 * **Local LLM & Edge AI:** Optimization and application of on-device/local LLMs using tools like Ollama and LM Studio
 * **Virtual Convergence Technology:** AI-integrated education and intelligent interaction technologies in virtual environments
 
+<img src='/images/2.png'>
 ---
 
 ### 🚀 프로젝트 및 소속 (Projects & Affiliations)
@@ -88,3 +90,4 @@ Interested students are encouraged to contact us via email at any time.
 * **Email:** [leesg@dongseo.ac.kr](mailto:leesg@dongseo.ac.kr)
 * **GitHub:** [smartgenerationlab.github.io](https://smartgenerationlab.github.io)
 
+<a href="{{ base_path }}/files/SGLab_20260424.pdf" class="btn btn--primary">소개 자료 다운로드(Download Lab Intro as PDF)</a>
