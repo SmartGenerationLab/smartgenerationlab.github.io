@@ -20,7 +20,7 @@ redirect_from:
 
 We specialize in the efficient utilization of open-source models, optimization of Large Language Models (LLMs) in local environments, and virtual convergence technologies designed to solve real-world problems.
 
-<img src="{{ base_path }}/images/1.png">
+[SGLab_1](images/1.png "SGLab_1")
 
 ---
 
@@ -42,7 +42,7 @@ Our lab conducts in-depth exploration into the following core areas:
 * **Local LLM & Edge AI:** Optimization and application of on-device/local LLMs using tools like Ollama and LM Studio
 * **Virtual Convergence Technology:** AI-integrated education and intelligent interaction technologies in virtual environments
 
-<img src="{{ base_path }}/images/2.png">
+[SGLab_1](images/1.png "SGLab_2")
 
 ---
 
