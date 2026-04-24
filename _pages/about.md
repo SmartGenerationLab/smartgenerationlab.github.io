@@ -42,7 +42,7 @@ Our lab conducts in-depth exploration into the following core areas:
 * **Local LLM & Edge AI:** Optimization and application of on-device/local LLMs using tools like Ollama and LM Studio
 * **Virtual Convergence Technology:** AI-integrated education and intelligent interaction technologies in virtual environments
 
-![SGLab_2](images/1.png "SGLab_2")
+![SGLab_2](images/2.png "SGLab_2")
 
 ---
 
