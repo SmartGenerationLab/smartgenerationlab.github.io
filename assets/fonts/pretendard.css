@@ -1,0 +1,12 @@
+/* Pretendard — Smart Generation Lab 웹폰트 로드
+   Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard. SIL OFL 1.1 (LICENSE.txt)
+   배포본의 공식 서브셋 woff2(한글 KS X 1001 + 라틴, 무수정)를 브랜드가 쓰는 네 웨이트만 로드한다.
+   Body 400 · Label 500 · Heading/Display 600 · 강조 700. 설치된 서체가 있으면 local()을 우선한다. */
+@font-face { font-family: 'Pretendard'; font-weight: 400; font-display: swap;
+  src: local('Pretendard Regular'), local('Pretendard'), url(./woff2/Pretendard-Regular.subset.woff2) format('woff2'); }
+@font-face { font-family: 'Pretendard'; font-weight: 500; font-display: swap;
+  src: local('Pretendard Medium'), url(./woff2/Pretendard-Medium.subset.woff2) format('woff2'); }
+@font-face { font-family: 'Pretendard'; font-weight: 600; font-display: swap;
+  src: local('Pretendard SemiBold'), url(./woff2/Pretendard-SemiBold.subset.woff2) format('woff2'); }
+@font-face { font-family: 'Pretendard'; font-weight: 700; font-display: swap;
+  src: local('Pretendard Bold'), url(./woff2/Pretendard-Bold.subset.woff2) format('woff2'); }

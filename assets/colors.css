@@ -1,0 +1,54 @@
+/* Smart Generation Lab — color tokens v2.0.0
+   Generated from tokens/colors.json by scripts/build-tokens.js. Do not edit by hand. */
+
+:root {
+  /* 무채색 5단계 — 모두 미세하게 따뜻한 쪽으로 기울어 있음 */
+  --sgl-ink:         #111113;
+  --sgl-graphite:    #1C1C1F;
+  --sgl-slate:       #2E2E33;
+  --sgl-mist:        #A3A3AD;
+  --sgl-paper:       #F4F3F0;
+
+  /* 강조 — 화면당 1% 미만 */
+  --sgl-gold:        #C9A961;  /* 다크 배경 전용 */
+  --sgl-gold-deep:   #A8863F;  /* 라이트 배경 전용 */
+
+  /* 파생 */
+  --sgl-slate-soft:  #6B6B73;
+  --sgl-rule-light:  #D9D8D3;
+  --sgl-paper-shade: #E6E5E0;
+
+  /* 다크가 기본 테마 */
+  --sgl-bg:         var(--sgl-ink);
+  --sgl-bg-raised:  var(--sgl-graphite);
+  --sgl-rule:       var(--sgl-slate);
+  --sgl-text:       var(--sgl-paper);
+  --sgl-text-muted: var(--sgl-mist);
+  --sgl-accent:     var(--sgl-gold);
+
+  /* 타이포 */
+  --sgl-font: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+  --sgl-tracking-display: -0.03em;
+  --sgl-tracking-heading: -0.02em;
+  --sgl-tracking-label:    0.1em;
+  --sgl-leading-body:      1.65;
+
+  /* 그리드 */
+  --sgl-columns:  12;
+  --sgl-gutter:   24px;
+  --sgl-margin:   96px;   /* @1440 */
+  --sgl-baseline:  8px;
+}
+
+[data-theme="light"] {
+  --sgl-bg:         var(--sgl-paper);
+  --sgl-bg-raised:  var(--sgl-paper);   /* 카드에 면을 쓰지 않음 — 룰로만 구분 */
+  --sgl-rule:       var(--sgl-rule-light);
+  --sgl-text:       var(--sgl-slate);
+  --sgl-text-muted: var(--sgl-slate-soft);
+  --sgl-accent:     var(--sgl-gold-deep);
+}
+
+/* 위계는 크기·굵기·여백·1px 룰로만 만든다.
+   그라데이션, 글로우, 그림자, opacity 금지 — colors.json → forbidden 참조. */
+.sgl-rule { border: 0; border-top: 1px solid var(--sgl-rule); }
