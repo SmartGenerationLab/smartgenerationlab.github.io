@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://smartgenerationlab.github.io/sitemap.xml

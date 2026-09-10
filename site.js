@@ -14,6 +14,13 @@
   }
   if (toggle) toggle.addEventListener('click', () => applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
 
+  // ---- 모바일 메뉴 ----
+  const menu = document.querySelector('[data-menu-toggle]'), header = document.querySelector('.site-header');
+  if (menu && header) {
+    menu.addEventListener('click', () => { const open = header.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && header.classList.contains('open')) { header.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); } });
+  }
+
   // ---- 히어로 점 필드 — brand-v2.html field() 이식. opacity 대신 합성색을 애니메이션 ----
   let field = null;
   const host = document.getElementById('hero-field');
