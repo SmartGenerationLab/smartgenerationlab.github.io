@@ -54,6 +54,18 @@
     run();
   }
 
+  // ---- 이메일 서명 복사 (HTML은 text/html + text/plain 둘 다 넣는다) ----
+  const sigPrev = document.getElementById('sig-preview'), sigStatus = document.getElementById('sig-status');
+  for (const b of document.querySelectorAll('[data-copy-sig]')) b.addEventListener('click', async () => {
+    const text = document.getElementById('sig-text').value;
+    try {
+      if (b.dataset.copySig === 'html' && navigator.clipboard.write && window.ClipboardItem) {
+        await navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([sigPrev.innerHTML], { type: 'text/html' }), 'text/plain': new Blob([text], { type: 'text/plain' }) })]);
+      } else await navigator.clipboard.writeText(text);
+      sigStatus.textContent = b.dataset.copySig === 'html' ? '복사했습니다. 서명 편집기에 붙여 넣으세요.' : '텍스트 서명을 복사했습니다.';
+    } catch (e) { sigStatus.textContent = '복사가 막혔습니다. 미리보기를 드래그해 복사하세요.'; }
+  });
+
   // ---- 히어로 점 필드 — brand-v2.html field() 이식. opacity 대신 합성색을 애니메이션 ----
   const host = document.getElementById('hero-field');
   if (host) {
