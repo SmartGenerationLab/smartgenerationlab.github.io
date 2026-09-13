@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" data-theme="light">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,14 +14,16 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://smartgenerationlab.github.io/publications.html">
 <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="assets/png/favicon-180.png">
 <link rel="stylesheet" href="assets/fonts/pretendard.css">
 <link rel="stylesheet" href="assets/colors.css">
-<link rel="stylesheet" href="site.css">
-<script>try{var t=localStorage.getItem('sgl-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="stylesheet" href="site.css?v=1a4cee70">
+<script>(function(){var t=null;try{t=localStorage.getItem('sgl-theme')}catch(e){}var d=document.documentElement;d.dataset.themeMode=(t==='dark'||t==='light')?t:'auto';d.dataset.theme=(t==='dark'||t==='light')?t:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ResearchOrganization","@id":"https://smartgenerationlab.github.io/#org","name":"Smart Generation Lab","alternateName":["스마트 제너레이션 랩","SG Lab"],"url":"https://smartgenerationlab.github.io","email":"leesg@dongseo.ac.kr","parentOrganization":{"@type":"CollegeOrUniversity","name":"동서대학교"},"address":{"@type":"PostalAddress","streetAddress":"부산광역시 사상구 주례로 47","addressLocality":"부산","addressCountry":"KR"},"logo":"https://smartgenerationlab.github.io/assets/png/favicon-512.png","sameAs":["https://github.com/SmartGenerationLab","https://scholar.google.com/citations?user=MpXDztYAAAAJ"]},{"@type":"Person","name":"이상걸","alternateName":"Sang-Geol Lee, Ph.D.","jobTitle":"지도교수 · Principal Investigator","email":"leesg@dongseo.ac.kr","worksFor":{"@id":"https://smartgenerationlab.github.io/#org"},"sameAs":["https://scholar.google.com/citations?user=MpXDztYAAAAJ","https://github.com/SmartGenerationLab"]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로</a>
@@ -36,11 +38,13 @@
     <nav id="site-nav" class="nav" aria-label="주요 메뉴">
       <a href="research.html">연구 분야</a>
       <a href="projects.html">프로젝트</a>
+      <a href="activities.html">활동</a>
       <a href="members.html">멤버</a>
       <a href="publications.html" aria-current="page">논문</a>
+      <a href="brand.html">브랜드</a>
       <a href="contact.html">연락처</a>
-      <a class="btn-outline" href="contact.html">연구실 지원</a>
-      <button class="theme-toggle" type="button" aria-label="다크·라이트 전환" data-theme-toggle><span class="t-light">DARK</span><span class="t-dark">LIGHT</span></button>
+      <a class="btn-outline" href="apply.html">연구실 지원</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="테마: 시스템 설정" title="테마 전환 (시스템 · 라이트 · 다크)"><span class="i-auto"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><rect x="2" y="3.5" width="16" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 17h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="i-light"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.5v2.5M10 16v2.5M1.5 10H4M16 10h2.5M4 4l1.8 1.8M14.2 14.2 16 16M4 16l1.8-1.8M14.2 5.8 16 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="i-dark"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M16.5 12.5A7 7 0 0 1 7.5 3.5a7 7 0 1 0 9 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span></button>
     </nav>
   </div>
 </header>
@@ -48,15 +52,16 @@
 
   
   <section class="page-head container grid">
-    <div class="col-8"><p class="label"><span class="num">05</span><span>Publications</span></p><h1>논문</h1><p class="lede">총 40편 · 학술지 26 · 학술대회 14. 최근 발표 순. 전체 목록은 Google Scholar에서.</p></div>
+    <div class="col-8"><p class="label"><span class="num">06</span><span>Publications</span></p><h1>논문</h1><p class="lede">총 40편 · 학술지 26 · 학술대회 14. 최근 발표 순. 전체 목록은 Google Scholar에서.</p></div>
   </section>
   <section class="section container">
     <div class="grid pub-tools rule-strong">
-      <div class="col-4"><a class="link sm" href="https://scholar.google.com/citations?user=MpXDztYAAAAJ">Google Scholar 프로필</a></div>
-      <nav class="col-8 year-nav" aria-label="연도"><a href="#y2026">2026</a><a href="#y2025">2025</a><a href="#y2024">2024</a><a href="#y2019">2019</a><a href="#y2018">2018</a><a href="#y2017">2017</a><a href="#y2016">2016</a><a href="#y2015">2015</a><a href="#y2014">2014</a><a href="#y2013">2013</a><a href="#y2012">2012</a><a href="#y2011">2011</a><a href="#y2010">2010</a><a href="#y2008">2008</a><a href="#y2007">2007</a><a href="#y2004">2004</a><a href="#y2003">2003</a></nav>
+      <div class="col-7 filters" role="group" aria-label="분야"><button type="button" class="chip on" data-filter="">전체</button><button type="button" class="chip" data-filter="vision">컴퓨터비전 25</button><button type="button" class="chip" data-filter="generative">생성 AI 4</button><button type="button" class="chip" data-filter="llm">LLM 3</button><button type="button" class="chip" data-filter="agent">에이전트 3</button><button type="button" class="chip" data-filter="signal">신호처리 4</button><button type="button" class="chip" data-filter="other">그 외 1</button></div>
+      <div class="col-5 search"><label class="visually-hidden" for="pub-q">검색</label><input id="pub-q" type="search" placeholder="제목·저자·학술지 검색" autocomplete="off"><span class="muted" id="pub-count"></span></div>
+      <nav class="col-12 year-nav" aria-label="연도"><a href="#y2026">2026</a><a href="#y2025">2025</a><a href="#y2024">2024</a><a href="#y2019">2019</a><a href="#y2018">2018</a><a href="#y2017">2017</a><a href="#y2016">2016</a><a href="#y2015">2015</a><a href="#y2014">2014</a><a href="#y2013">2013</a><a href="#y2012">2012</a><a href="#y2011">2011</a><a href="#y2010">2010</a><a href="#y2008">2008</a><a href="#y2007">2007</a><a href="#y2004">2004</a><a href="#y2003">2003</a></nav>
     </div>
     <div class="grid pub-year" id="y2026"><h2 class="col-2">2026</h2><ol class="pub-list col-10">
-      <li class="pub" id="kang2026battery">
+      <li class="pub" id="kang2026battery" data-area="agent" data-kind="학술지" data-year="2026" data-text="a study on reinforcement learning-based smartphone battery overcharge prevention and user full charge optimization ho-seok kang sang-geol lee bong-jun choi journal of the institute of convergence signal processing">
         <span class="year">2026</span>
         <div>
           <h3>A Study on Reinforcement Learning-Based Smartphone Battery Overcharge Prevention and User Full Charge Optimization</h3>
@@ -64,6 +69,7 @@
           <p class="venue"><em>Journal of the Institute of Convergence Signal Processing</em>, vol. 27, no. 3, pp. 119–124, The Korea Institute of Convergence Signal Processing · <a class="accent" href="https://doi.org/10.23087/jkicsp.2026.27.3.003">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{kang2026battery,
+  keywords = {agent},
   title = {A Study on Reinforcement Learning-Based Smartphone Battery Overcharge Prevention and User Full Charge Optimization},
   author = {Kang, Ho-Seok and Lee, Sang-Geol and Choi, Bong-Jun},
   journal = {Journal of the Institute of Convergence Signal Processing},
@@ -76,9 +82,9 @@
   issn = {2765-1134}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">에이전트<br>학술지</span>
       </li>
-      <li class="pub" id="kim2026tokenization">
+      <li class="pub" id="kim2026tokenization" data-area="llm" data-kind="학술지" data-year="2026" data-text="delta tokenization technique for sequence data in llm-based human motion prediction geon-woo kim bong-jun choi sang-geol lee journal of artificial intelligence convergence technology">
         <span class="year">2026</span>
         <div>
           <h3>Delta Tokenization Technique for Sequence Data in LLM-Based Human Motion Prediction</h3>
@@ -86,6 +92,7 @@
           <p class="venue"><em>Journal of Artificial Intelligence Convergence Technology</em>, vol. 6, no. 2, pp. 160–165</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{kim2026tokenization,
+  keywords = {llm},
   title = {Delta Tokenization Technique for Sequence Data in {LLM}-Based Human Motion Prediction},
   author = {Kim, Geon-Woo and Choi, Bong-Jun and Lee, Sang-Geol},
   journal = {Journal of Artificial Intelligence Convergence Technology},
@@ -96,9 +103,9 @@
   issn = {2982-6578}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">LLM<br>학술지</span>
       </li>
-      <li class="pub" id="lim2026texture">
+      <li class="pub" id="lim2026texture" data-area="generative" data-kind="학술지" data-year="2026" data-text="gan-based asian facial texture generation and control using skin condition maps jun-oh lim bong-jun choi sang-geol lee journal of the institute of convergence signal processing">
         <span class="year">2026</span>
         <div>
           <h3>GAN-Based Asian Facial Texture Generation and Control Using Skin Condition Maps</h3>
@@ -106,6 +113,7 @@
           <p class="venue"><em>Journal of the Institute of Convergence Signal Processing</em>, vol. 27, no. 1, pp. 44–53, The Korea Institute of Convergence Signal Processing · <a class="accent" href="https://doi.org/10.23087/jkicsp.2026.27.1.006">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lim2026texture,
+  keywords = {generative},
   title = {{GAN}-Based Asian Facial Texture Generation and Control Using Skin Condition Maps},
   author = {Lim, Jun-Oh and Choi, Bong-Jun and Lee, Sang-Geol},
   journal = {Journal of the Institute of Convergence Signal Processing},
@@ -118,9 +126,9 @@
   issn = {2765-1134}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">생성 AI<br>학술지</span>
       </li>
-      <li class="pub" id="lee2026news">
+      <li class="pub" id="lee2026news" data-area="llm" data-kind="학술지" data-year="2026" data-text="news trend summarization using tf-idf-based topic guiding and fine-tuned kobart jeong-min lee sang-geol lee bong-jun choi journal of the institute of convergence signal processing">
         <span class="year">2026</span>
         <div>
           <h3>News Trend Summarization Using TF-IDF-Based Topic Guiding and Fine-Tuned KoBART</h3>
@@ -128,6 +136,7 @@
           <p class="venue"><em>Journal of the Institute of Convergence Signal Processing</em>, vol. 27, no. 2, pp. 101–106, The Korea Institute of Convergence Signal Processing · <a class="accent" href="https://doi.org/10.23087/jkicsp.2026.27.2.006">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2026news,
+  keywords = {llm},
   title = {News Trend Summarization Using {TF-IDF}-Based Topic Guiding and Fine-Tuned {KoBART}},
   author = {Lee, Jeong-Min and Lee, Sang-Geol and Choi, Bong-Jun},
   journal = {Journal of the Institute of Convergence Signal Processing},
@@ -140,9 +149,9 @@
   issn = {2765-1134}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">LLM<br>학술지</span>
       </li>
-      <li class="pub" id="lim2026reinforcement">
+      <li class="pub" id="lim2026reinforcement" data-area="agent" data-kind="학술지" data-year="2026" data-text="reinforcement learning-based water quality safety assurance and disinfectant dosing optimization min-gyu lim sang-geol lee sun-yong kim the journal of the korea institute of electronic communication sciences">
         <span class="year">2026</span>
         <div>
           <h3>Reinforcement Learning-Based Water Quality Safety Assurance and Disinfectant Dosing Optimization</h3>
@@ -150,6 +159,7 @@
           <p class="venue"><em>The Journal of the Korea Institute of Electronic Communication Sciences</em>, vol. 21, no. 3, pp. 1081–1088, The Korea Institute of Electronic Communication Sciences · <a class="accent" href="https://doi.org/10.13067/JKIECS.2026.21.3.1081">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lim2026reinforcement,
+  keywords = {agent},
   title = {Reinforcement Learning-Based Water Quality Safety Assurance and Disinfectant Dosing Optimization},
   author = {Lim, Min-Gyu and Lee, Sang-Geol and Kim, Sun-Yong},
   journal = {The Journal of the Korea Institute of Electronic Communication Sciences},
@@ -162,9 +172,9 @@
   issn = {1975-8170}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">에이전트<br>학술지</span>
       </li>
-      <li class="pub" id="jung2026zerotraining">
+      <li class="pub" id="jung2026zerotraining" data-area="generative" data-kind="학술지" data-year="2026" data-text="zero-training image editing method using pixel-level control and dual attention based on mmdit architecture young-woong jung sang-geol lee the journal of korean institute of communications and information sciences">
         <span class="year">2026</span>
         <div>
           <h3>Zero-Training Image Editing Method Using Pixel-Level Control and Dual Attention Based on MMDiT Architecture</h3>
@@ -172,6 +182,7 @@
           <p class="venue"><em>The Journal of Korean Institute of Communications and Information Sciences</em>, vol. 51, no. 5, pp. 954–963, The Korean Institute of Communications and Information Sciences</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{jung2026zerotraining,
+  keywords = {generative},
   title = {Zero-Training Image Editing Method Using Pixel-Level Control and Dual Attention Based on {MMDiT} Architecture},
   author = {Jung, Young-Woong and Lee, Sang-Geol},
   journal = {The Journal of Korean Institute of Communications and Information Sciences},
@@ -182,11 +193,11 @@
   publisher = {The Korean Institute of Communications and Information Sciences}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">생성 AI<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2025"><h2 class="col-2">2025</h2><ol class="pub-list col-10">
-      <li class="pub" id="heo2025difficulty">
+      <li class="pub" id="heo2025difficulty" data-area="agent" data-kind="학술지" data-year="2025" data-text="a study on a reinforcement learning-based player-adaptive dynamic game difficulty adjustment system gwan heo bong-jun choi sang-geol lee journal of the institute of convergence signal processing">
         <span class="year">2025</span>
         <div>
           <h3>A Study on a Reinforcement Learning-Based Player-Adaptive Dynamic Game Difficulty Adjustment System</h3>
@@ -194,6 +205,7 @@
           <p class="venue"><em>Journal of the Institute of Convergence Signal Processing</em>, vol. 26, no. 6, pp. 285–291, The Korea Institute of Convergence Signal Processing · <a class="accent" href="https://doi.org/10.23087/jkicsp.2025.26.6.005">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{heo2025difficulty,
+  keywords = {agent},
   title = {A Study on a Reinforcement Learning-Based Player-Adaptive Dynamic Game Difficulty Adjustment System},
   author = {Heo, Gwan and Choi, Bong-Jun and Lee, Sang-Geol},
   journal = {Journal of the Institute of Convergence Signal Processing},
@@ -206,9 +218,9 @@
   issn = {2765-1134}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">에이전트<br>학술지</span>
       </li>
-      <li class="pub" id="jung2025cyclegan">
+      <li class="pub" id="jung2025cyclegan" data-area="generative" data-kind="학술지" data-year="2025" data-text="improving day-to-night image translation performance with cyclegan and cbam integration young-woong jung ji-hong min sang-geol lee journal of the korea institute of information and communication engineering">
         <span class="year">2025</span>
         <div>
           <h3>Improving Day-to-Night Image Translation Performance with CycleGAN and CBAM Integration</h3>
@@ -216,6 +228,7 @@
           <p class="venue"><em>Journal of the Korea Institute of Information and Communication Engineering</em>, vol. 29, no. 1, pp. 45–54, The Korea Institute of Information and Communication Engineering · <a class="accent" href="https://doi.org/10.6109/jkiice.2025.29.1.45">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{jung2025cyclegan,
+  keywords = {generative},
   title = {Improving Day-to-Night Image Translation Performance with {CycleGAN} and {CBAM} Integration},
   author = {Jung, Young-Woong and Min, Ji-Hong and Lee, Sang-Geol},
   journal = {Journal of the Korea Institute of Information and Communication Engineering},
@@ -228,9 +241,9 @@
   issn = {2234-4772}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">생성 AI<br>학술지</span>
       </li>
-      <li class="pub" id="lee2025motion">
+      <li class="pub" id="lee2025motion" data-area="vision" data-kind="학술지" data-year="2025" data-text="motion estimation framework and authoring tools based on myos and bayesian probability sang-geol lee yunsick sung jong hyuk park multimedia tools and applications">
         <span class="year">2025</span>
         <div>
           <h3>Motion Estimation Framework and Authoring Tools Based on MYOs and Bayesian Probability</h3>
@@ -238,6 +251,7 @@
           <p class="venue"><em>Multimedia Tools and Applications</em>, vol. 84, no. 30, pp. 36235–36254, Springer · <a class="accent" href="https://doi.org/10.1007/s11042-016-3843-y">DOI</a></p>
           <p class="note">Published online 19 August 2016; assigned to issue 84(30), September 2025</p>
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2025motion,
+  keywords = {vision},
   title = {Motion Estimation Framework and Authoring Tools Based on {MYO}s and {B}ayesian Probability},
   author = {Lee, Sang-Geol and Sung, Yunsick and Park, Jong Hyuk},
   journal = {Multimedia Tools and Applications},
@@ -251,9 +265,9 @@
   note = {Published online 19 August 2016; assigned to issue 84(30), September 2025}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="lee2025tfidf">
+      <li class="pub" id="lee2025tfidf" data-area="llm" data-kind="학술지" data-year="2025" data-text="research on documentation scoping and data visualization to improve accuracy of tf-idf analysis jeong-min lee sang-geol lee bong-jun choi journal of artificial intelligence convergence technology">
         <span class="year">2025</span>
         <div>
           <h3>Research on Documentation Scoping and Data Visualization to Improve Accuracy of TF-IDF Analysis</h3>
@@ -261,6 +275,7 @@
           <p class="venue"><em>Journal of Artificial Intelligence Convergence Technology</em>, vol. 5, no. 1, pp. 49–54</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2025tfidf,
+  keywords = {llm},
   title = {Research on Documentation Scoping and Data Visualization to Improve Accuracy of {TF-IDF} Analysis},
   author = {Lee, Jeong-Min and Lee, Sang-Geol and Choi, Bong-Jun},
   journal = {Journal of Artificial Intelligence Convergence Technology},
@@ -271,11 +286,11 @@
   issn = {2982-6578}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">LLM<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2024"><h2 class="col-2">2024</h2><ol class="pub-list col-10">
-      <li class="pub" id="jung2024generative">
+      <li class="pub" id="jung2024generative" data-area="generative" data-kind="학술대회" data-year="2024" data-text="image translation generation method based on a generative learning model young-woong jung ji-hong min eun-jin son sang-geol lee proceedings of the 2024 kics fall conference">
         <span class="year">2024</span>
         <div>
           <h3>Image Translation Generation Method Based on a Generative Learning Model</h3>
@@ -283,6 +298,7 @@
           <p class="venue"><em>Proceedings of the 2024 KICS Fall Conference</em>, pp. 343–344, The Korean Institute of Communications and Information Sciences</p>
           <p class="note">In Korean; English title is an unofficial translation</p>
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{jung2024generative,
+  keywords = {generative},
   title = {Image Translation Generation Method Based on a Generative Learning Model},
   author = {Jung, Young-Woong and Min, Ji-Hong and Son, Eun-Jin and Lee, Sang-Geol},
   booktitle = {Proceedings of the 2024 {KICS} Fall Conference},
@@ -293,11 +309,11 @@
   note = {In Korean; English title is an unofficial translation}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">생성 AI<br>학술대회</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2019"><h2 class="col-2">2019</h2><ol class="pub-list col-10">
-      <li class="pub" id="kwak2018autonomous">
+      <li class="pub" id="kwak2018autonomous" data-area="vision" data-kind="학술대회" data-year="2019" data-text="autonomous flight control method of drones for enforcement of traffic law violation jeonghoon kwak sang-geol lee yunsick sung parallel and distributed computing, applications and technologies: 19th international conference, pdcat 2018, jeju island, south korea, august 20–22, 2018, revised selected papers">
         <span class="year">2019</span>
         <div>
           <h3>Autonomous Flight Control Method of Drones for Enforcement of Traffic Law Violation</h3>
@@ -305,6 +321,7 @@
           <p class="venue"><em>Parallel and Distributed Computing, Applications and Technologies: 19th International Conference, PDCAT 2018, Jeju Island, South Korea, August 20–22, 2018, Revised Selected Papers</em>, vol. 931, pp. 329–334, Springer · <a class="accent" href="https://doi.org/10.1007/978-981-13-5907-1_35">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{kwak2018autonomous,
+  keywords = {vision},
   title = {Autonomous Flight Control Method of Drones for Enforcement of Traffic Law Violation},
   author = {Kwak, Jeonghoon and Lee, Sang-Geol and Sung, Yunsick},
   booktitle = {Parallel and Distributed Computing, Applications and Technologies: 19th International Conference, {PDCAT} 2018, Jeju Island, South Korea, August 20--22, 2018, Revised Selected Papers},
@@ -318,11 +335,11 @@
   isbn = {978-981-13-5906-4}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2018"><h2 class="col-2">2018</h2><ol class="pub-list col-10">
-      <li class="pub" id="sung2018advanced">
+      <li class="pub" id="sung2018advanced" data-area="vision" data-kind="학술지" data-year="2018" data-text="advanced camera image cropping approach for cnn-based end-to-end controls on sustainable computing yunsick sung yong jin jeonghoon kwak sang-geol lee kyungeun cho sustainability">
         <span class="year">2018</span>
         <div>
           <h3>Advanced Camera Image Cropping Approach for CNN-Based End-to-End Controls on Sustainable Computing</h3>
@@ -330,6 +347,7 @@
           <p class="venue"><em>Sustainability</em>, vol. 10, no. 3, pp. 816, MDPI · <a class="accent" href="https://doi.org/10.3390/su10030816">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{sung2018advanced,
+  keywords = {vision},
   title = {Advanced Camera Image Cropping Approach for {CNN}-Based End-to-End Controls on Sustainable Computing},
   author = {Sung, Yunsick and Jin, Yong and Kwak, Jeonghoon and Lee, Sang-Geol and Cho, Kyungeun},
   journal = {Sustainability},
@@ -342,9 +360,9 @@
   issn = {2071-1050}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="sung2018motion">
+      <li class="pub" id="sung2018motion" data-area="vision" data-kind="학술지" data-year="2018" data-text="motion quaternion-based motion estimation method of myo using k-means algorithm and bayesian probability yunsick sung haitao guo sang-geol lee soft computing">
         <span class="year">2018</span>
         <div>
           <h3>Motion Quaternion-Based Motion Estimation Method of MYO Using K-Means Algorithm and Bayesian Probability</h3>
@@ -352,6 +370,7 @@
           <p class="venue"><em>Soft Computing</em>, vol. 22, no. 20, pp. 6773–6783, Springer · <a class="accent" href="https://doi.org/10.1007/s00500-018-3379-3">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{sung2018motion,
+  keywords = {vision},
   title = {Motion Quaternion-Based Motion Estimation Method of {MYO} Using {K}-Means Algorithm and {B}ayesian Probability},
   author = {Sung, Yunsick and Guo, Haitao and Lee, Sang-Geol},
   journal = {Soft Computing},
@@ -364,9 +383,9 @@
   issn = {1432-7643}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="lee2018variations">
+      <li class="pub" id="lee2018variations" data-area="vision" data-kind="학술지" data-year="2018" data-text="variations of alexnet and googlenet to improve korean character recognition performance sang-geol lee yunsick sung yeon-gyu kim eui-young cha journal of information processing systems">
         <span class="year">2018</span>
         <div>
           <h3>Variations of AlexNet and GoogLeNet to Improve Korean Character Recognition Performance</h3>
@@ -374,6 +393,7 @@
           <p class="venue"><em>Journal of Information Processing Systems</em>, vol. 14, no. 1, pp. 205–217, Korea Information Processing Society · <a class="accent" href="https://doi.org/10.3745/JIPS.04.0061">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2018variations,
+  keywords = {vision},
   title = {Variations of {AlexNet} and {GoogLeNet} to Improve {K}orean Character Recognition Performance},
   author = {Lee, Sang-Geol and Sung, Yunsick and Kim, Yeon-Gyu and Cha, Eui-Young},
   journal = {Journal of Information Processing Systems},
@@ -386,11 +406,11 @@
   issn = {1976-913X}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2017"><h2 class="col-2">2017</h2><ol class="pub-list col-10">
-      <li class="pub" id="jin2017learning">
+      <li class="pub" id="jin2017learning" data-area="vision" data-kind="학술대회" data-year="2017" data-text="a learning and testing system for self-driving using cnn on torcs yong jin sang-geol lee yunsick sung kyungeun cho annual conference of kips">
         <span class="year">2017</span>
         <div>
           <h3>A Learning and Testing System for Self-Driving Using CNN on TORCS</h3>
@@ -398,6 +418,7 @@
           <p class="venue"><em>Annual Conference of KIPS</em>, vol. 24, no. 2, pp. 839–841, Korea Information Processing Society · <a class="accent" href="https://doi.org/10.3745/PKIPS.y2017m11a.839">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{jin2017learning,
+  keywords = {vision},
   title = {A Learning and Testing System for Self-Driving Using {CNN} on {TORCS}},
   author = {Jin, Yong and Lee, Sang-Geol and Sung, Yunsick and Cho, Kyungeun},
   booktitle = {Annual Conference of {KIPS}},
@@ -410,9 +431,9 @@
   doi = {10.3745/PKIPS.y2017m11a.839}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="kim2017emotional">
+      <li class="pub" id="kim2017emotional" data-area="other" data-kind="학술지" data-year="2017" data-text="a study on emotional vocabulary for interactive visual media viewing behavior models construction cheol-ki kim jun-hyuk son sang-geol lee ji-hyun cha seung-hwan kim journal of korea design forum">
         <span class="year">2017</span>
         <div>
           <h3>A Study on Emotional Vocabulary for Interactive Visual Media Viewing Behavior Models Construction</h3>
@@ -420,6 +441,7 @@
           <p class="venue"><em>Journal of Korea Design Forum</em>, pp. 27–38, Korea Society of Design Trend · <a class="accent" href="https://doi.org/10.21326/ksdt.2017..54.003">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{kim2017emotional,
+  keywords = {other},
   title = {A Study on Emotional Vocabulary for Interactive Visual Media Viewing Behavior Models Construction},
   author = {Kim, Cheol-Ki and Son, Jun-Hyuk and Lee, Sang-Geol and Cha, Ji-Hyun and Kim, Seung-Hwan},
   journal = {Journal of Korea Design Forum},
@@ -432,11 +454,11 @@
   issn = {2233-9205}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">그 외<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2016"><h2 class="col-2">2016</h2><ol class="pub-list col-10">
-      <li class="pub" id="lee2016enhanced">
+      <li class="pub" id="lee2016enhanced" data-area="signal" data-kind="학술지" data-year="2016" data-text="enhanced filter-based relative distance estimation method sang-geol lee yunsick sung young-sik jeong advanced science letters">
         <span class="year">2016</span>
         <div>
           <h3>Enhanced Filter-Based Relative Distance Estimation Method</h3>
@@ -444,6 +466,7 @@
           <p class="venue"><em>Advanced Science Letters</em>, vol. 22, no. 9, pp. 2496–2499, American Scientific Publishers · <a class="accent" href="https://doi.org/10.1166/asl.2016.7795">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2016enhanced,
+  keywords = {signal},
   title = {Enhanced Filter-Based Relative Distance Estimation Method},
   author = {Lee, Sang-Geol and Sung, Yunsick and Jeong, Young-Sik},
   journal = {Advanced Science Letters},
@@ -456,9 +479,9 @@
   issn = {1936-6612}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">신호처리<br>학술지</span>
       </li>
-      <li class="pub" id="lee2016log">
+      <li class="pub" id="lee2016log" data-area="signal" data-kind="학술지" data-year="2016" data-text="log-distance path loss model-based relative distance estimation method sang-geol lee yunsick sung advanced science letters">
         <span class="year">2016</span>
         <div>
           <h3>Log-Distance Path Loss Model-Based Relative Distance Estimation Method</h3>
@@ -466,6 +489,7 @@
           <p class="venue"><em>Advanced Science Letters</em>, vol. 22, no. 9, pp. 2558–2561, American Scientific Publishers · <a class="accent" href="https://doi.org/10.1166/asl.2016.7841">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2016log,
+  keywords = {signal},
   title = {Log-Distance Path Loss Model-Based Relative Distance Estimation Method},
   author = {Lee, Sang-Geol and Sung, Yunsick},
   journal = {Advanced Science Letters},
@@ -478,9 +502,9 @@
   issn = {1936-6612}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">신호처리<br>학술지</span>
       </li>
-      <li class="pub" id="jo2016red">
+      <li class="pub" id="jo2016red" data-area="vision" data-kind="학술지" data-year="2016" data-text="red and green parking lamp location detection method in uav environment kyeong-min jo sang-geol lee eui-young cha yunsick sung sangil choi advanced science letters">
         <span class="year">2016</span>
         <div>
           <h3>Red and Green Parking Lamp Location Detection Method in UAV Environment</h3>
@@ -488,6 +512,7 @@
           <p class="venue"><em>Advanced Science Letters</em>, vol. 22, no. 9, pp. 2396–2399, American Scientific Publishers · <a class="accent" href="https://doi.org/10.1166/asl.2016.7848">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{jo2016red,
+  keywords = {vision},
   title = {Red and Green Parking Lamp Location Detection Method in {UAV} Environment},
   author = {Jo, Kyeong-Min and Lee, Sang-Geol and Cha, Eui-Young and Sung, Yunsick and Choi, Sangil},
   journal = {Advanced Science Letters},
@@ -500,9 +525,9 @@
   issn = {1936-6612}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="lee2016style">
+      <li class="pub" id="lee2016style" data-area="vision" data-kind="학술지" data-year="2016" data-text="style classification and visualization of art painting's genre using self-organizing maps sang-geol lee eui-young cha human-centric computing and information sciences">
         <span class="year">2016</span>
         <div>
           <h3>Style Classification and Visualization of Art Painting's Genre Using Self-Organizing Maps</h3>
@@ -510,6 +535,7 @@
           <p class="venue"><em>Human-centric Computing and Information Sciences</em>, vol. 6, no. 1, pp. 7, Springer · <a class="accent" href="https://doi.org/10.1186/s13673-016-0063-4">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2016style,
+  keywords = {vision},
   title = {Style Classification and Visualization of Art Painting's Genre Using Self-Organizing Maps},
   author = {Lee, Sang-Geol and Cha, Eui-Young},
   journal = {Human-centric Computing and Information Sciences},
@@ -522,9 +548,9 @@
   issn = {2192-1962}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="lee2016variant">
+      <li class="pub" id="lee2016variant" data-area="signal" data-kind="학술지" data-year="2016" data-text="variant rss adaptive filtering method in beacon environments sang-geol lee eui-young cha yunsick sung advanced science letters">
         <span class="year">2016</span>
         <div>
           <h3>Variant RSS Adaptive Filtering Method in Beacon Environments</h3>
@@ -532,6 +558,7 @@
           <p class="venue"><em>Advanced Science Letters</em>, vol. 22, no. 9, pp. 2562–2565, American Scientific Publishers · <a class="accent" href="https://doi.org/10.1166/asl.2016.7842">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2016variant,
+  keywords = {signal},
   title = {Variant {RSS} Adaptive Filtering Method in Beacon Environments},
   author = {Lee, Sang-Geol and Cha, Eui-Young and Sung, Yunsick},
   journal = {Advanced Science Letters},
@@ -544,11 +571,11 @@
   issn = {1936-6612}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">신호처리<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2015"><h2 class="col-2">2015</h2><ol class="pub-list col-10">
-      <li class="pub" id="kim2015correlation">
+      <li class="pub" id="kim2015correlation" data-area="vision" data-kind="학술대회" data-year="2015" data-text="correlation analysis and optimization between parameters using with deep learning yeon-gyu kim ho-jun park sang-geol lee eui-young cha annual conference of kips">
         <span class="year">2015</span>
         <div>
           <h3>Correlation Analysis and Optimization between Parameters Using with Deep Learning</h3>
@@ -556,6 +583,7 @@
           <p class="venue"><em>Annual Conference of KIPS</em>, pp. 1285–1288, Korea Information Processing Society · <a class="accent" href="https://doi.org/10.3745/PKIPS.y2015m10a.1285">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{kim2015correlation,
+  keywords = {vision},
   title = {Correlation Analysis and Optimization between Parameters Using with Deep Learning},
   author = {Kim, Yeon-Gyu and Park, Ho-Jun and Lee, Sang-Geol and Cha, Eui-Young},
   booktitle = {Annual Conference of {KIPS}},
@@ -566,9 +594,9 @@
   doi = {10.3745/PKIPS.y2015m10a.1285}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="park2015dental">
+      <li class="pub" id="park2015dental" data-area="vision" data-kind="학술대회" data-year="2015" data-text="dental caries extraction using ycbcr color model and art2 algorithm ho-jun park yeon-gyu kim sang-geol lee eui-young cha annual conference of kips">
         <span class="year">2015</span>
         <div>
           <h3>Dental Caries Extraction Using YCbCr Color Model and ART2 Algorithm</h3>
@@ -576,6 +604,7 @@
           <p class="venue"><em>Annual Conference of KIPS</em>, pp. 1289–1291, Korea Information Processing Society · <a class="accent" href="https://doi.org/10.3745/PKIPS.y2015m10a.1289">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{park2015dental,
+  keywords = {vision},
   title = {Dental Caries Extraction Using {YCbCr} Color Model and {ART2} Algorithm},
   author = {Park, Ho-Jun and Kim, Yeon-Gyu and Lee, Sang-Geol and Cha, Eui-Young},
   booktitle = {Annual Conference of {KIPS}},
@@ -586,9 +615,9 @@
   doi = {10.3745/PKIPS.y2015m10a.1289}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="lee2015impulse">
+      <li class="pub" id="lee2015impulse" data-area="signal" data-kind="학술지" data-year="2015" data-text="impulse noise filter for beacon-ap signal processing in real time sang-geol lee eui-young cha yunsick sung journal of convergence">
         <span class="year">2015</span>
         <div>
           <h3>Impulse Noise Filter for Beacon-AP Signal Processing in Real Time</h3>
@@ -596,6 +625,7 @@
           <p class="venue"><em>Journal of Convergence</em>, vol. 6, no. 4, pp. 1–7, Korea Information Technology Convergence Society</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2015impulse,
+  keywords = {signal},
   title = {Impulse Noise Filter for Beacon-{AP} Signal Processing in Real Time},
   author = {Lee, Sang-Geol and Cha, Eui-Young and Sung, Yunsick},
   journal = {Journal of Convergence},
@@ -607,11 +637,11 @@
   issn = {2093-7741}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">신호처리<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2014"><h2 class="col-2">2014</h2><ol class="pub-list col-10">
-      <li class="pub" id="kim2014nucleus">
+      <li class="pub" id="kim2014nucleus" data-area="vision" data-kind="학술지" data-year="2014" data-text="nucleus extraction of uterine cervical pap-smears using marker information and watershed algorithm kwang baek kim sang geol lee gwang ha kim journal of medical imaging and health informatics">
         <span class="year">2014</span>
         <div>
           <h3>Nucleus Extraction of Uterine Cervical Pap-Smears Using Marker Information and Watershed Algorithm</h3>
@@ -619,6 +649,7 @@
           <p class="venue"><em>Journal of Medical Imaging and Health Informatics</em>, vol. 4, no. 1, pp. 1–7, American Scientific Publishers · <a class="accent" href="https://doi.org/10.1166/jmihi.2014.1215">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{kim2014nucleus,
+  keywords = {vision},
   title = {Nucleus Extraction of Uterine Cervical Pap-Smears Using Marker Information and Watershed Algorithm},
   author = {Kim, Kwang Baek and Lee, Sang Geol and Kim, Gwang Ha},
   journal = {Journal of Medical Imaging and Health Informatics},
@@ -631,11 +662,11 @@
   issn = {2156-7018}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2013"><h2 class="col-2">2013</h2><ol class="pub-list col-10">
-      <li class="pub" id="lee2013color">
+      <li class="pub" id="lee2013color" data-area="vision" data-kind="학술지" data-year="2013" data-text="color inference using an enhanced fuzzy method sang-geol lee kwang-baek kim eui-young cha international journal of multimedia and ubiquitous engineering">
         <span class="year">2013</span>
         <div>
           <h3>Color Inference Using an Enhanced Fuzzy Method</h3>
@@ -643,6 +674,7 @@
           <p class="venue"><em>International Journal of Multimedia and Ubiquitous Engineering</em>, vol. 8, no. 5, pp. 313–324, Science and Engineering Research Support Society · <a class="accent" href="https://doi.org/10.14257/ijmue.2013.8.5.31">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2013color,
+  keywords = {vision},
   title = {Color Inference Using an Enhanced Fuzzy Method},
   author = {Lee, Sang-Geol and Kim, Kwang-Baek and Cha, Eui-Young},
   journal = {International Journal of Multimedia and Ubiquitous Engineering},
@@ -655,9 +687,9 @@
   issn = {1975-0080}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="jo2013similar">
+      <li class="pub" id="jo2013similar" data-area="vision" data-kind="학술대회" data-year="2013" data-text="similar image retrieval using color histogram and edge histogram descriptor min-hyuk jo sang-geol lee eui-young cha proceedings of the korean institute of information and communication sciences conference">
         <span class="year">2013</span>
         <div>
           <h3>Similar Image Retrieval Using Color Histogram and Edge Histogram Descriptor</h3>
@@ -665,6 +697,7 @@
           <p class="venue"><em>Proceedings of the Korean Institute of Information and Communication Sciences Conference</em>, pp. 332–335, The Korea Institute of Information and Communication Engineering</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{jo2013similar,
+  keywords = {vision},
   title = {Similar Image Retrieval Using Color Histogram and Edge Histogram Descriptor},
   author = {Jo, Min-Hyuk and Lee, Sang-Geol and Cha, Eui-Young},
   booktitle = {Proceedings of the Korean Institute of Information and Communication Sciences Conference},
@@ -674,9 +707,9 @@
   organization = {The Korea Institute of Information and Communication Engineering}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="jo2013performance">
+      <li class="pub" id="jo2013performance" data-area="vision" data-kind="학술대회" data-year="2013" data-text="the performance improvement of edge histogram descriptor image matching using image normalization min-hyuk jo sang-geol lee jae-hyun cho eui-young cha proceedings of the korean institute of information and communication sciences conference">
         <span class="year">2013</span>
         <div>
           <h3>The Performance Improvement of Edge Histogram Descriptor Image Matching Using Image Normalization</h3>
@@ -684,6 +717,7 @@
           <p class="venue"><em>Proceedings of the Korean Institute of Information and Communication Sciences Conference</em>, pp. 385–388, The Korea Institute of Information and Communication Engineering</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{jo2013performance,
+  keywords = {vision},
   title = {The Performance Improvement of Edge Histogram Descriptor Image Matching Using Image Normalization},
   author = {Jo, Min-Hyuk and Lee, Sang-Geol and Cho, Jae-Hyun and Cha, Eui-Young},
   booktitle = {Proceedings of the Korean Institute of Information and Communication Sciences Conference},
@@ -693,11 +727,11 @@
   organization = {The Korea Institute of Information and Communication Engineering}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2012"><h2 class="col-2">2012</h2><ol class="pub-list col-10">
-      <li class="pub" id="yeo2012moving">
+      <li class="pub" id="yeo2012moving" data-area="vision" data-kind="학술대회" data-year="2012" data-text="moving human area detection using depth segmentation jae-yun yeo sang-geol lee cheol-ki kim eui-young cha proceedings of the korean society of computer information conference">
         <span class="year">2012</span>
         <div>
           <h3>Moving Human Area Detection Using Depth Segmentation</h3>
@@ -705,6 +739,7 @@
           <p class="venue"><em>Proceedings of the Korean Society of Computer Information Conference</em>, vol. 20, no. 2, pp. 315–317, The Korean Society of Computer and Information</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{yeo2012moving,
+  keywords = {vision},
   title = {Moving Human Area Detection Using Depth Segmentation},
   author = {Yeo, Jae-Yun and Lee, Sang-Geol and Kim, Cheol-Ki and Cha, Eui-Young},
   booktitle = {Proceedings of the Korean Society of Computer Information Conference},
@@ -716,9 +751,9 @@
   organization = {The Korean Society of Computer and Information}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="kim2012center">
+      <li class="pub" id="kim2012center" data-area="vision" data-kind="학술대회" data-year="2012" data-text="the center of hand detection using geometric feature of hand image min-ha kim sang-geol lee jae-hyun cho eui-young cha proceedings of the korean society of computer information conference">
         <span class="year">2012</span>
         <div>
           <h3>The Center of Hand Detection Using Geometric Feature of Hand Image</h3>
@@ -726,6 +761,7 @@
           <p class="venue"><em>Proceedings of the Korean Society of Computer Information Conference</em>, vol. 20, no. 2, pp. 311–313, The Korean Society of Computer and Information</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{kim2012center,
+  keywords = {vision},
   title = {The Center of Hand Detection Using Geometric Feature of Hand Image},
   author = {Kim, Min-Ha and Lee, Sang-Geol and Cho, Jae-Hyun and Cha, Eui-Young},
   booktitle = {Proceedings of the Korean Society of Computer Information Conference},
@@ -737,11 +773,11 @@
   organization = {The Korean Society of Computer and Information}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2011"><h2 class="col-2">2011</h2><ol class="pub-list col-10">
-      <li class="pub" id="lee2011online">
+      <li class="pub" id="lee2011online" data-area="vision" data-kind="학술지" data-year="2011" data-text="online handwritten digit recognition by smith-waterman alignment won-ho mun yeon-seok choi sang-geol lee eui-young cha journal of the korea society of computer and information">
         <span class="year">2011</span>
         <div>
           <h3>Online Handwritten Digit Recognition by Smith-Waterman Alignment</h3>
@@ -749,6 +785,7 @@
           <p class="venue"><em>Journal of the Korea Society of Computer and Information</em>, vol. 16, no. 9, pp. 27–33, The Korean Society of Computer and Information · <a class="accent" href="https://doi.org/10.9708/jksci.2011.16.9.027">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2011online,
+  keywords = {vision},
   title = {Online Handwritten Digit Recognition by {S}mith-{W}aterman Alignment},
   author = {Mun, Won-Ho and Choi, Yeon-Seok and Lee, Sang-Geol and Cha, Eui-Young},
   journal = {Journal of the Korea Society of Computer and Information},
@@ -761,11 +798,11 @@
   issn = {1598-849X}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2010"><h2 class="col-2">2010</h2><ol class="pub-list col-10">
-      <li class="pub" id="sang2010retouching">
+      <li class="pub" id="sang2010retouching" data-area="vision" data-kind="학술지" data-year="2010" data-text="retouching method for watercolor painting effect using mean shift segmentation sang-geol lee cheol-ki kim eui-young cha journal of the korea society of computer and information">
         <span class="year">2010</span>
         <div>
           <h3>Retouching Method for Watercolor Painting Effect Using Mean Shift Segmentation</h3>
@@ -773,6 +810,7 @@
           <p class="venue"><em>Journal of the Korea Society of Computer and Information</em>, vol. 15, no. 9, pp. 25–33, The Korean Society of Computer and Information · <a class="accent" href="https://doi.org/10.9708/jksci.2010.15.9.025">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{sang2010retouching,
+  keywords = {vision},
   title = {Retouching Method for Watercolor Painting Effect Using Mean Shift Segmentation},
   author = {Lee, Sang-Geol and Kim, Cheol-Ki and Cha, Eui-Young},
   journal = {Journal of the Korea Society of Computer and Information},
@@ -785,9 +823,9 @@
   issn = {1598-849X}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
-      <li class="pub" id="lee2010retouching">
+      <li class="pub" id="lee2010retouching" data-area="vision" data-kind="학술대회" data-year="2010" data-text="retouching method for watercolor painting style using mean shift segmentation sang-geol lee cheol-ki kim eui-young cha proceedings of the korean society of computer information conference">
         <span class="year">2010</span>
         <div>
           <h3>Retouching Method for Watercolor Painting Style Using Mean Shift Segmentation</h3>
@@ -795,6 +833,7 @@
           <p class="venue"><em>Proceedings of the Korean Society of Computer Information Conference</em>, pp. 433–434, The Korean Society of Computer and Information</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{lee2010retouching,
+  keywords = {vision},
   title = {Retouching Method for Watercolor Painting Style Using Mean Shift Segmentation},
   author = {Lee, Sang-Geol and Kim, Cheol-Ki and Cha, Eui-Young},
   booktitle = {Proceedings of the Korean Society of Computer Information Conference},
@@ -804,9 +843,9 @@
   organization = {The Korean Society of Computer and Information}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="lee2010smartphone">
+      <li class="pub" id="lee2010smartphone" data-area="vision" data-kind="학술지" data-year="2010" data-text="smartphone based retouching method for watercolor painting effect using mean shift segmentation sang-geol lee cheol-ki kim eui-young cha journal of the korea institute of information and communication engineering">
         <span class="year">2010</span>
         <div>
           <h3>Smartphone Based Retouching Method for Watercolor Painting Effect Using Mean Shift Segmentation</h3>
@@ -814,6 +853,7 @@
           <p class="venue"><em>Journal of the Korea Institute of Information and Communication Engineering</em>, vol. 14, no. 11, pp. 2413–2418, The Korea Institute of Information and Communication Engineering · <a class="accent" href="https://doi.org/10.6109/jkiice.2010.14.11.2413">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{lee2010smartphone,
+  keywords = {vision},
   title = {Smartphone Based Retouching Method for Watercolor Painting Effect Using Mean Shift Segmentation},
   author = {Lee, Sang-Geol and Kim, Cheol-Ki and Cha, Eui-Young},
   journal = {Journal of the Korea Institute of Information and Communication Engineering},
@@ -826,11 +866,11 @@
   issn = {2234-4772}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2008"><h2 class="col-2">2008</h2><ol class="pub-list col-10">
-      <li class="pub" id="lee2008crowd">
+      <li class="pub" id="lee2008crowd" data-area="vision" data-kind="학술대회" data-year="2008" data-text="the crowd activity analysis based on perspective effect in network camera sang-geol lee hyun-jun park eui-young cha proceedings of the korean institute of information and communication sciences conference">
         <span class="year">2008</span>
         <div>
           <h3>The Crowd Activity Analysis Based on Perspective Effect in Network Camera</h3>
@@ -838,6 +878,7 @@
           <p class="venue"><em>Proceedings of the Korean Institute of Information and Communication Sciences Conference</em>, pp. 415–418, The Korea Institute of Information and Communication Engineering</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{lee2008crowd,
+  keywords = {vision},
   title = {The Crowd Activity Analysis Based on Perspective Effect in Network Camera},
   author = {Lee, Sang-Geol and Park, Hyun-Jun and Cha, Eui-Young},
   booktitle = {Proceedings of the Korean Institute of Information and Communication Sciences Conference},
@@ -847,11 +888,11 @@
   organization = {The Korea Institute of Information and Communication Engineering}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2007"><h2 class="col-2">2007</h2><ol class="pub-list col-10">
-      <li class="pub" id="ji2007monitoring">
+      <li class="pub" id="ji2007monitoring" data-area="vision" data-kind="학술지" data-year="2007" data-text="monitoring of movement behaviors of chironomid larvae after exposure to diazinon using fractal dimension and self-organizing map c. w. ji s. h. lee k.-h. choi i.-s. kwak s. g. lee e. y. cha s.-k. lee t.-s. chon international journal of ecodynamics">
         <span class="year">2007</span>
         <div>
           <h3>Monitoring of Movement Behaviors of Chironomid Larvae after Exposure to Diazinon Using Fractal Dimension and Self-Organizing Map</h3>
@@ -859,6 +900,7 @@
           <p class="venue"><em>International Journal of Ecodynamics</em>, vol. 2, no. 1, pp. 27–38, WIT Press · <a class="accent" href="https://doi.org/10.2495/ECO-V2-N1-27-38">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@article{ji2007monitoring,
+  keywords = {vision},
   title = {Monitoring of Movement Behaviors of Chironomid Larvae after Exposure to Diazinon Using Fractal Dimension and Self-Organizing Map},
   author = {Ji, C. W. and Lee, S. H. and Choi, K.-H. and Kwak, I.-S. and Lee, S. G. and Cha, E. Y. and Lee, S.-K. and Chon, T.-S.},
   journal = {International Journal of Ecodynamics},
@@ -871,11 +913,11 @@
   issn = {1743-5242}
 }</pre></details>
         </div>
-        <span class="kind">학술지</span>
+        <span class="kind">컴퓨터비전<br>학술지</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2004"><h2 class="col-2">2004</h2><ol class="pub-list col-10">
-      <li class="pub" id="lee2004tracking">
+      <li class="pub" id="lee2004tracking" data-area="vision" data-kind="학술대회" data-year="2004" data-text="a 3d object tracking system using a multi-camera sang-geol lee kyung-mo koo young-wook seo eui-young cha annual conference of kips">
         <span class="year">2004</span>
         <div>
           <h3>A 3D Object Tracking System Using a Multi-Camera</h3>
@@ -883,6 +925,7 @@
           <p class="venue"><em>Annual Conference of KIPS</em>, vol. 11, no. 1, pp. 781–784, Korea Information Processing Society · <a class="accent" href="https://doi.org/10.3745/PKIPS.y2004m05a.781">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{lee2004tracking,
+  keywords = {vision},
   title = {A {3D} Object Tracking System Using a Multi-Camera},
   author = {Lee, Sang-Geol and Koo, Kyung-Mo and Seo, Young-Wook and Cha, Eui-Young},
   booktitle = {Annual Conference of {KIPS}},
@@ -895,9 +938,9 @@
   doi = {10.3745/PKIPS.y2004m05a.781}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
-      <li class="pub" id="seo2004study">
+      <li class="pub" id="seo2004study" data-area="vision" data-kind="학술대회" data-year="2004" data-text="a study on multi-object tracking, using the hungarian algorithm young-wook seo sang-geol lee won-du chang eui-young cha annual conference of kips">
         <span class="year">2004</span>
         <div>
           <h3>A Study on Multi-Object Tracking, Using The Hungarian Algorithm</h3>
@@ -905,6 +948,7 @@
           <p class="venue"><em>Annual Conference of KIPS</em>, vol. 11, no. 1, pp. 777–780, Korea Information Processing Society · <a class="accent" href="https://doi.org/10.3745/PKIPS.y2004m05a.777">DOI</a></p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{seo2004study,
+  keywords = {vision},
   title = {A Study on Multi-Object Tracking, Using The {H}ungarian Algorithm},
   author = {Seo, Young-Wook and Lee, Sang-Geol and Chang, Won-Du and Cha, Eui-Young},
   booktitle = {Annual Conference of {KIPS}},
@@ -917,11 +961,11 @@
   doi = {10.3745/PKIPS.y2004m05a.777}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
     </ol></div>
     <div class="grid pub-year" id="y2003"><h2 class="col-2">2003</h2><ol class="pub-list col-10">
-      <li class="pub" id="koo2003vision">
+      <li class="pub" id="koo2003vision" data-area="vision" data-kind="학술대회" data-year="2003" data-text="a study on the performance improvement of recycle machine using vision system kyung-mo koo sang-geol lee young-mi park eui-young cha proceedings of the korea multimedia society conference">
         <span class="year">2003</span>
         <div>
           <h3>A Study on the Performance Improvement of Recycle Machine Using Vision System</h3>
@@ -929,6 +973,7 @@
           <p class="venue"><em>Proceedings of the Korea Multimedia Society Conference</em>, pp. 347–350, Korea Multimedia Society</p>
           
           <details class="bibtex"><summary>BibTeX</summary><pre>@inproceedings{koo2003vision,
+  keywords = {vision},
   title = {A Study on the Performance Improvement of Recycle Machine Using Vision System},
   author = {Koo, Kyung-Mo and Lee, Sang-Geol and Park, Young-Mi and Cha, Eui-Young},
   booktitle = {Proceedings of the Korea Multimedia Society Conference},
@@ -938,9 +983,10 @@
   organization = {Korea Multimedia Society}
 }</pre></details>
         </div>
-        <span class="kind">학술대회</span>
+        <span class="kind">컴퓨터비전<br>학술대회</span>
       </li>
     </ol></div>
+    <p class="empty muted" id="pub-empty" hidden>조건에 맞는 논문이 없습니다.</p>
   </section>
 </main>
 <footer class="site-footer">
@@ -950,9 +996,10 @@
       <img class="only-dark" src="assets/logo/sgl-mark-b-dark.svg" width="20" height="20" alt="">
       <span>Smart Generation Lab</span><span class="muted">· 동서대학교</span>
     </div>
+    <div class="foot-links"><a href="https://github.com/SmartGenerationLab">GitHub</a><a href="https://scholar.google.com/citations?user=MpXDztYAAAAJ">Google Scholar</a><a href="brand.html">브랜드</a></div>
     <div class="muted">© 2026 Smart Generation Lab</div>
   </div>
 </footer>
-<script src="site.js" defer></script>
+<script src="site.js?v=c69136bc" defer></script>
 </body>
 </html>

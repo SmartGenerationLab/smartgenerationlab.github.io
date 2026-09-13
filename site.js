@@ -1,18 +1,25 @@
-// 테마 전환 + 히어로 점 필드. 색은 colors.css 변수에서 읽는다 — HEX 직접 기입 없음.
+// 테마(시스템·라이트·다크) · 모바일 메뉴 · 필터/검색 · 히어로 점 필드. 색은 colors.css 변수에서 읽는다 — HEX 직접 기입 없음.
 (function () {
   'use strict';
   const root = document.documentElement;
+  const mq = matchMedia('(prefers-color-scheme: dark)');
   const params = new URLSearchParams(location.search);
-  if (params.get('theme') === 'dark' || params.get('theme') === 'light') root.dataset.theme = params.get('theme');
+  if (params.get('theme') === 'dark' || params.get('theme') === 'light') { root.dataset.themeMode = params.get('theme'); root.dataset.theme = params.get('theme'); }
 
-  // ---- 테마 토글 (localStorage 저장) ----
+  // ---- 테마: 모드(auto·light·dark)는 저장, 실제 테마는 모드가 auto면 시스템을 따른다 ----
   const toggle = document.querySelector('[data-theme-toggle]');
-  function applyTheme(name) {
-    root.dataset.theme = name;
-    try { localStorage.setItem('sgl-theme', name); } catch (e) { /* 저장 불가 환경 */ }
+  const MODES = ['auto', 'light', 'dark'], NAMES = { auto: '시스템 설정', light: '라이트', dark: '다크' };
+  let field = null;
+  function applyMode(mode) {
+    root.dataset.themeMode = mode;
+    root.dataset.theme = mode === 'auto' ? (mq.matches ? 'dark' : 'light') : mode;
+    try { if (mode === 'auto') localStorage.removeItem('sgl-theme'); else localStorage.setItem('sgl-theme', mode); } catch (e) { /* 저장 불가 환경 */ }
+    if (toggle) toggle.setAttribute('aria-label', `테마: ${NAMES[mode]}${mode === 'auto' ? ` (현재 ${NAMES[root.dataset.theme]})` : ''}`);
     if (field) field.recolor();
   }
-  if (toggle) toggle.addEventListener('click', () => applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (toggle) toggle.addEventListener('click', () => applyMode(MODES[(MODES.indexOf(root.dataset.themeMode || 'auto') + 1) % MODES.length]));
+  mq.addEventListener('change', () => { if ((root.dataset.themeMode || 'auto') === 'auto') applyMode('auto'); });
+  applyMode(root.dataset.themeMode || 'auto');
 
   // ---- 모바일 메뉴 ----
   const menu = document.querySelector('[data-menu-toggle]'), header = document.querySelector('.site-header');
@@ -21,8 +28,33 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && header.classList.contains('open')) { header.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); } });
   }
 
+  // ---- 필터(칩) + 검색: data-filter 칩이 data-area / data-kind 항목을 거른다 ----
+  const chips = [...document.querySelectorAll('.chip[data-filter]')];
+  const q = document.getElementById('pub-q');
+  if (chips.length) {
+    const items = [...document.querySelectorAll('[data-area], .timeline li[data-kind]')];
+    const groups = [...document.querySelectorAll('.pub-year, .act-year')];
+    const count = document.getElementById('pub-count'), empty = document.getElementById('pub-empty');
+    let filter = '';
+    function run() {
+      const text = (q ? q.value : '').trim().toLowerCase();
+      let n = 0;
+      for (const el of items) {
+        const key = el.dataset.area || el.dataset.kind;
+        const ok = (!filter || key === filter) && (!text || (el.dataset.text || el.textContent.toLowerCase()).includes(text));
+        el.hidden = !ok; if (ok) n++;
+      }
+      for (const g of groups) g.hidden = ![...g.querySelectorAll('li')].some((li) => !li.hidden);
+      if (count) count.textContent = filter || text ? `${n}편` : '';
+      if (empty) empty.hidden = n > 0;
+    }
+    for (const c of chips) c.addEventListener('click', () => { filter = c.dataset.filter; chips.forEach((x) => x.classList.toggle('on', x === c)); run(); });
+    if (q) q.addEventListener('input', run);
+    // #키 로 들어온 경우 해당 항목이 필터에 가려지지 않게 전체로 둔다
+    run();
+  }
+
   // ---- 히어로 점 필드 — brand-v2.html field() 이식. opacity 대신 합성색을 애니메이션 ----
-  let field = null;
   const host = document.getElementById('hero-field');
   if (host) {
     const cols = +host.dataset.cols || 12, rows = +host.dataset.rows || 12;

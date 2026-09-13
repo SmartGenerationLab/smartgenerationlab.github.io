@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" data-theme="light">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,14 +14,16 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://smartgenerationlab.github.io/members.html">
 <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="assets/png/favicon-180.png">
 <link rel="stylesheet" href="assets/fonts/pretendard.css">
 <link rel="stylesheet" href="assets/colors.css">
-<link rel="stylesheet" href="site.css">
-<script>try{var t=localStorage.getItem('sgl-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="stylesheet" href="site.css?v=1a4cee70">
+<script>(function(){var t=null;try{t=localStorage.getItem('sgl-theme')}catch(e){}var d=document.documentElement;d.dataset.themeMode=(t==='dark'||t==='light')?t:'auto';d.dataset.theme=(t==='dark'||t==='light')?t:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ResearchOrganization","@id":"https://smartgenerationlab.github.io/#org","name":"Smart Generation Lab","alternateName":["스마트 제너레이션 랩","SG Lab"],"url":"https://smartgenerationlab.github.io","email":"leesg@dongseo.ac.kr","parentOrganization":{"@type":"CollegeOrUniversity","name":"동서대학교"},"address":{"@type":"PostalAddress","streetAddress":"부산광역시 사상구 주례로 47","addressLocality":"부산","addressCountry":"KR"},"logo":"https://smartgenerationlab.github.io/assets/png/favicon-512.png","sameAs":["https://github.com/SmartGenerationLab","https://scholar.google.com/citations?user=MpXDztYAAAAJ"]},{"@type":"Person","name":"이상걸","alternateName":"Sang-Geol Lee, Ph.D.","jobTitle":"지도교수 · Principal Investigator","email":"leesg@dongseo.ac.kr","worksFor":{"@id":"https://smartgenerationlab.github.io/#org"},"sameAs":["https://scholar.google.com/citations?user=MpXDztYAAAAJ","https://github.com/SmartGenerationLab"]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로</a>
@@ -36,11 +38,13 @@
     <nav id="site-nav" class="nav" aria-label="주요 메뉴">
       <a href="research.html">연구 분야</a>
       <a href="projects.html">프로젝트</a>
+      <a href="activities.html">활동</a>
       <a href="members.html" aria-current="page">멤버</a>
       <a href="publications.html">논문</a>
+      <a href="brand.html">브랜드</a>
       <a href="contact.html">연락처</a>
-      <a class="btn-outline" href="contact.html">연구실 지원</a>
-      <button class="theme-toggle" type="button" aria-label="다크·라이트 전환" data-theme-toggle><span class="t-light">DARK</span><span class="t-dark">LIGHT</span></button>
+      <a class="btn-outline" href="apply.html">연구실 지원</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="테마: 시스템 설정" title="테마 전환 (시스템 · 라이트 · 다크)"><span class="i-auto"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><rect x="2" y="3.5" width="16" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 17h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="i-light"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.5v2.5M10 16v2.5M1.5 10H4M16 10h2.5M4 4l1.8 1.8M14.2 14.2 16 16M4 16l1.8-1.8M14.2 5.8 16 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="i-dark"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M16.5 12.5A7 7 0 0 1 7.5 3.5a7 7 0 1 0 9 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span></button>
     </nav>
   </div>
 </header>
@@ -48,12 +52,12 @@
 
   
   <section class="page-head container grid">
-    <div class="col-8"><p class="label"><span class="num">04</span><span>Members</span></p><h1>멤버</h1></div>
+    <div class="col-8"><p class="label"><span class="num">05</span><span>Members</span></p><h1>멤버</h1></div>
   </section>
   <section class="section container">
     <div class="grid members rule-strong">
       <div class="pi col-4">
-        <img class="portrait" src="images/lee-sang-geol.jpg" width="240" height="240" alt="이상걸 교수">
+        <img class="portrait" src="images/lee-sang-geol.jpg" width="240" height="320" alt="이상걸 교수">
         <h2>이상걸 <span class="en">Sang-Geol Lee, Ph.D.</span></h2>
         <p class="role">지도교수 · Principal Investigator</p>
         <p class="bio">생성형 AI와 컴퓨터 비전으로 차세대 지능형 시스템을 연구합니다. 관심 분야는 딥러닝, 기계학습, 신경망, 컴퓨터 비전, 이미지 처리.</p>
@@ -64,7 +68,7 @@
       <div class="col-8">
         <h3 class="sub">연구원</h3><ul class="member-list"><li><span class="avatar" aria-hidden="true"></span><div><strong>민지홍</strong><span>학부연구생 · 생성 모델 · 이미지 변환</span><span class="pubs"><a href="publications.html#jung2025cyclegan">Improving Day-to-Night Image Translation Performance with CycleGAN and CBAM Integration</a><a href="publications.html#jung2024generative">Image Translation Generation Method Based on a Generative Learning Model</a></span></div></li></ul>
         <h3 class="sub">졸업생</h3><ul class="member-list"><li><span class="avatar" aria-hidden="true"></span><div><strong>정영웅</strong><span>석사 졸업 · 생성 모델 · 이미지 변환과 편집 (CycleGAN·MMDiT)</span><span class="pubs"><a href="publications.html#jung2026zerotraining">Zero-Training Image Editing Method Using Pixel-Level Control and Dual Attention Based on MMDiT Architecture</a><a href="publications.html#jung2025cyclegan">Improving Day-to-Night Image Translation Performance with CycleGAN and CBAM Integration</a><a href="publications.html#jung2024generative">Image Translation Generation Method Based on a Generative Learning Model</a></span></div></li></ul>
-        <p class="recruit"><a class="link" href="contact.html">다음 세대를 모집합니다</a></p>
+        <p class="recruit"><a class="link" href="apply.html">다음 세대를 모집합니다</a></p>
       </div>
     </div>
   </section>
@@ -76,9 +80,10 @@
       <img class="only-dark" src="assets/logo/sgl-mark-b-dark.svg" width="20" height="20" alt="">
       <span>Smart Generation Lab</span><span class="muted">· 동서대학교</span>
     </div>
+    <div class="foot-links"><a href="https://github.com/SmartGenerationLab">GitHub</a><a href="https://scholar.google.com/citations?user=MpXDztYAAAAJ">Google Scholar</a><a href="brand.html">브랜드</a></div>
     <div class="muted">© 2026 Smart Generation Lab</div>
   </div>
 </footer>
-<script src="site.js" defer></script>
+<script src="site.js?v=c69136bc" defer></script>
 </body>
 </html>
