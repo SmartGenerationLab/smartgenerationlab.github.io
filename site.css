@@ -283,6 +283,8 @@ h3 { font-weight: 600; letter-spacing: -0.02em; }
   .site-header .bar { flex-wrap: wrap; }
   .nav { display: none; flex-basis: 100%; flex-direction: column; align-items: stretch; gap: 0; padding-top: 8px; font-size: 16px; }
   .site-header.open .nav { display: flex; }
+  /* 가로 모드처럼 세로가 짧은 화면: 고정 헤더 안에서 메뉴가 스크롤되게 */
+  .site-header.open { max-height: 100vh; max-height: 100dvh; overflow-y: auto; }
   .nav a { padding: 14px 0; border-top: 1px solid var(--sgl-rule); }
   .nav a[aria-current="page"]::after { display: none; }
   .nav a[aria-current="page"]::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--sgl-accent-text); margin-right: 12px; vertical-align: middle; }
