@@ -64,6 +64,8 @@ h3 { font-weight: 600; letter-spacing: -0.02em; }
 .nav .btn-outline { padding: 9px 16px; }
 .nav .btn-outline::after { display: none; }
 .theme-toggle { color: var(--sgl-text-muted); padding: 4px; display: inline-flex; align-items: center; }
+.lang-switch { font-size: 13px; font-weight: 500; color: var(--sgl-text-muted); letter-spacing: 0.02em; }
+.lang-switch:hover { color: var(--sgl-text-strong); }
 .theme-toggle:hover { color: var(--sgl-text-strong); }
 .menu-toggle { display: none; font-weight: 500; font-size: 14px; color: var(--sgl-text-strong); padding: 8px 0 8px 16px; }
 .menu-toggle .m-close, .site-header.open .menu-toggle .m-open { display: none; }

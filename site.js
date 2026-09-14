@@ -8,13 +8,14 @@
 
   // ---- 테마: 모드(auto·light·dark)는 저장, 실제 테마는 모드가 auto면 시스템을 따른다 ----
   const toggle = document.querySelector('[data-theme-toggle]');
-  const MODES = ['auto', 'light', 'dark'], NAMES = { auto: '시스템 설정', light: '라이트', dark: '다크' };
+  const MODES = ['auto', 'light', 'dark'];
+  const NAMES = root.lang === 'en' ? { auto: 'system', light: 'light', dark: 'dark' } : { auto: '시스템 설정', light: '라이트', dark: '다크' };
   let field = null;
   function applyMode(mode) {
     root.dataset.themeMode = mode;
     root.dataset.theme = mode === 'auto' ? (mq.matches ? 'dark' : 'light') : mode;
     try { if (mode === 'auto') localStorage.removeItem('sgl-theme'); else localStorage.setItem('sgl-theme', mode); } catch (e) { /* 저장 불가 환경 */ }
-    if (toggle) toggle.setAttribute('aria-label', `테마: ${NAMES[mode]}${mode === 'auto' ? ` (현재 ${NAMES[root.dataset.theme]})` : ''}`);
+    if (toggle) toggle.setAttribute('aria-label', root.lang === 'en' ? `Theme: ${NAMES[mode]}${mode === 'auto' ? ` (now ${NAMES[root.dataset.theme]})` : ''}` : `테마: ${NAMES[mode]}${mode === 'auto' ? ` (현재 ${NAMES[root.dataset.theme]})` : ''}`);
     if (field) field.recolor();
   }
   if (toggle) toggle.addEventListener('click', () => applyMode(MODES[(MODES.indexOf(root.dataset.themeMode || 'auto') + 1) % MODES.length]));
@@ -45,7 +46,7 @@
         el.hidden = !ok; if (ok) n++;
       }
       for (const g of groups) g.hidden = ![...g.querySelectorAll('li')].some((li) => !li.hidden);
-      if (count) count.textContent = filter || text ? `${n}편` : '';
+      if (count) count.textContent = filter || text ? (root.lang === 'en' ? `${n} paper${n === 1 ? '' : 's'}` : `${n}편`) : '';
       if (empty) empty.hidden = n > 0;
     }
     for (const c of chips) c.addEventListener('click', () => { filter = c.dataset.filter; chips.forEach((x) => x.classList.toggle('on', x === c)); run(); });
@@ -62,8 +63,8 @@
       if (b.dataset.copySig === 'html' && navigator.clipboard.write && window.ClipboardItem) {
         await navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([sigPrev.innerHTML], { type: 'text/html' }), 'text/plain': new Blob([text], { type: 'text/plain' }) })]);
       } else await navigator.clipboard.writeText(text);
-      sigStatus.textContent = b.dataset.copySig === 'html' ? '복사했습니다. 서명 편집기에 붙여 넣으세요.' : '텍스트 서명을 복사했습니다.';
-    } catch (e) { sigStatus.textContent = '복사가 막혔습니다. 미리보기를 드래그해 복사하세요.'; }
+      sigStatus.textContent = root.lang === 'en' ? (b.dataset.copySig === 'html' ? 'Copied. Paste it into your signature editor.' : 'Copied the text signature.') : (b.dataset.copySig === 'html' ? '복사했습니다. 서명 편집기에 붙여 넣으세요.' : '텍스트 서명을 복사했습니다.');
+    } catch (e) { sigStatus.textContent = root.lang === 'en' ? 'Clipboard blocked. Select the preview and copy it manually.' : '복사가 막혔습니다. 미리보기를 드래그해 복사하세요.'; }
   });
 
   // ---- 히어로 점 필드 — brand-v2.html field() 이식. opacity 대신 합성색을 애니메이션 ----
