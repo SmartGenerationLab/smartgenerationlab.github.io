@@ -25,7 +25,7 @@
 <link rel="apple-touch-icon" href="../assets/png/favicon-180.png">
 <link rel="stylesheet" href="../assets/fonts/pretendard.css">
 <link rel="stylesheet" href="../assets/colors.css">
-<link rel="stylesheet" href="../site.css?v=37b88343">
+<link rel="stylesheet" href="../site.css?v=cf127753">
 <script>(function(){var t=null;try{t=localStorage.getItem('sgl-theme')}catch(e){}var d=document.documentElement;d.dataset.themeMode=(t==='dark'||t==='light')?t:'auto';d.dataset.theme=(t==='dark'||t==='light')?t:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');})();</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ResearchOrganization","@id":"https://smartgenerationlab.github.io/#org","name":"Smart Generation Lab","alternateName":["스마트 제너레이션 랩","SG Lab"],"url":"https://smartgenerationlab.github.io","email":"leesg@dongseo.ac.kr","telephone":"+82-51-320-2135","parentOrganization":{"@type":"CollegeOrUniversity","name":"Dongseo University"},"address":{"@type":"PostalAddress","streetAddress":"47 Jurye-ro, Sasang-gu, Busan 47011, Korea","addressLocality":"Busan","addressCountry":"KR"},"logo":"https://smartgenerationlab.github.io/assets/png/favicon-512.png","sameAs":["https://github.com/SmartGenerationLab","https://scholar.google.com/citations?user=MpXDztYAAAAJ"]},{"@type":"Person","name":"Sang-Geol Lee, Ph.D.","alternateName":"이상걸","jobTitle":"Principal Investigator","email":"leesg@dongseo.ac.kr","telephone":"+82-51-320-2135","worksFor":{"@id":"https://smartgenerationlab.github.io/#org"},"sameAs":["https://scholar.google.com/citations?user=MpXDztYAAAAJ","https://github.com/SmartGenerationLab"]}]}</script>
 </head>
@@ -55,14 +55,19 @@
 </header>
 <main id="main">
 
-  <section class="hero container grid" aria-labelledby="hero-title">
-    <div class="hero-copy">
-      <p class="label"><span class="num">01</span><span>Smart Generation Lab · Dongseo University Department of Computer Engineering (Software)</span></p>
+  <section class="hero hero-video container" aria-labelledby="hero-title">
+    <p class="label"><span class="num">01</span><span>Smart Generation Lab · Dongseo University Department of Computer Engineering (Software)</span></p>
+    <div class="hero-stage" data-theme="light">
+      <video class="hero-media" autoplay muted loop playsinline preload="auto" poster="../images/hero-poster.jpg" aria-hidden="true">
+        <source src="../images/hero-1280.mp4" type="video/mp4" media="(max-width: 900px)"><source src="../images/hero-1920.mp4" type="video/mp4">
+      </video>
+      <div class="hero-stage-copy">
       <h1 id="hero-title">From seeing<br>to making.</h1>
       <p class="lede">We read the world with computer vision and rewrite it with generative models. Starting from models that understand images and video, we build the models that create them — training, deploying, and teaching them ourselves.</p>
-      <div class="actions"><a class="btn" href="research.html">See research</a><a class="link" href="apply.html">How to join</a></div>
+      </div>
+      <button class="hero-pause" type="button" data-video-toggle data-label-pause="Pause background video" data-label-play="Play background video" aria-label="Pause background video"><span class="i-pause" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><rect x="2" y="1" width="3" height="10" fill="currentColor"/><rect x="7" y="1" width="3" height="10" fill="currentColor"/></svg></span><span class="i-play" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2.5 1 11 6 2.5 11z" fill="currentColor"/></svg></span></button>
     </div>
-    <div class="hero-field" aria-hidden="true"><div id="hero-field" data-cols="12" data-rows="12" data-sp="40"></div></div>
+    <div class="actions"><a class="btn" href="research.html">See research</a><a class="link" href="apply.html">How to join</a></div>
   </section>
   <section class="section container" aria-labelledby="research-title">
     <div class="section-head grid rule-strong">
@@ -152,6 +157,6 @@
     <div class="muted">© 2026 Smart Generation Lab</div>
   </div>
 </footer>
-<script src="../site.js?v=fdcb7938" defer></script>
+<script src="../site.js?v=b859043b" defer></script>
 </body>
 </html>

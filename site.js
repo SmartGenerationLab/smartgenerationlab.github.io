@@ -1,4 +1,4 @@
-// 테마(시스템·라이트·다크) · 모바일 메뉴 · 필터/검색 · 히어로 점 필드. 색은 colors.css 변수에서 읽는다 — HEX 직접 기입 없음.
+// 테마(시스템·라이트·다크) · 모바일 메뉴 · 필터/검색 · 히어로 배경 영상 · 히어로 점 필드. 색은 colors.css 변수에서 읽는다 — HEX 직접 기입 없음.
 (function () {
   'use strict';
   const root = document.documentElement;
@@ -66,6 +66,22 @@
       sigStatus.textContent = root.lang === 'en' ? (b.dataset.copySig === 'html' ? 'Copied. Paste it into your signature editor.' : 'Copied the text signature.') : (b.dataset.copySig === 'html' ? '복사했습니다. 서명 편집기에 붙여 넣으세요.' : '텍스트 서명을 복사했습니다.');
     } catch (e) { sigStatus.textContent = root.lang === 'en' ? 'Clipboard blocked. Select the preview and copy it manually.' : '복사가 막혔습니다. 미리보기를 드래그해 복사하세요.'; }
   });
+
+  // ---- 히어로 배경 영상: 자동재생(음소거). 막히면 재시도, 사용자가 버튼으로 멈춘 경우만 멈춰 둔다 ----
+  const video = document.querySelector('.hero-media'), vbtn = document.querySelector('[data-video-toggle]');
+  if (video) {
+    let userPaused = false;
+    video.muted = true; video.defaultMuted = true; video.playsInline = true;
+    const tryPlay = () => { if (!userPaused && video.paused) video.play().catch(() => {}); };
+    const setBtn = () => { if (!vbtn) return; const p = video.paused; vbtn.classList.toggle('paused', p); vbtn.setAttribute('aria-label', p ? vbtn.dataset.labelPlay : vbtn.dataset.labelPause); };
+    video.addEventListener('play', setBtn); video.addEventListener('pause', setBtn);
+    video.addEventListener('canplay', tryPlay);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
+    // 저전력 모드 등으로 자동재생이 막히면 첫 터치·스크롤에 시작
+    for (const ev of ['pointerdown', 'touchstart', 'scroll', 'keydown']) addEventListener(ev, tryPlay, { once: true, passive: true });
+    if (vbtn) vbtn.addEventListener('click', () => { if (video.paused) { userPaused = false; video.play().catch(() => {}); } else { userPaused = true; video.pause(); } });
+    tryPlay(); setBtn();
+  }
 
   // ---- 히어로 점 필드 — brand-v2.html field() 이식. opacity 대신 합성색을 애니메이션 ----
   const host = document.getElementById('hero-field');
